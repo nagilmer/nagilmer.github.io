@@ -1,0 +1,418 @@
+/********************************************************
+					GENERAL STYLES
+ *******************************************************/
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	/*text-align: center;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Assistant, sans-serif;
+	font-weight: 400;
+	color: #4A4A4A;
+}
+
+p {
+	font-family: Assistant, sans-serif;
+	line-height: 1.5rem;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+a {
+	font-family: Assistant, sans-serif;
+	text-decoration: none;
+	color: #0070CD;
+}
+
+a:hover {
+	color: #44C0FF;
+}
+
+.main-wrapper {
+	max-width: 1200px;
+}
+
+.button {
+	/*border: solid #4A4A4A 3px;*/
+	background-color: #4A4A4A;
+	border-radius: 3px;
+	padding: 0.5rem;
+	text-decoration: none;
+	color: white;
+	display: block;
+	text-align: center;
+	margin: 2rem 0 2rem 0;
+	max-width: 200px;
+	transition: all .2s ease-in-out; 
+}
+
+.button:hover {
+	/*border: solid #44C0FF 3px;*/
+	background-color: #44C0FF;
+	color: white;
+	transform: scale(1.05);
+}
+
+.center {
+	margin: 0 auto;
+}
+
+img {
+	width: 100%;
+}
+
+/********************************************************
+					TOP NAV
+ *******************************************************/
+
+.topnav {
+	top: 0;
+	right: 0;
+	width: 100%;
+	position: fixed;
+	background-color: rgba(255,255,255,0.98);
+}
+
+/* Remove margins and padding from the list, 
+and add a black background color */
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #444;
+    text-align: center;
+    padding: 1rem 1rem 0.5rem 1rem;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+/* Nav link styles on hover*/
+
+ul.topnav li a:hover {
+	background-color: #111;
+	color: white;
+}
+
+.nav-logo {
+	max-height: 36px;
+	max-width: 36px;
+	padding: 0;
+	margin-top: -.4rem;
+	opacity: 0;
+	transition: 1s;
+}
+
+#interview:hover {
+	background-color: #F17E6F;
+}
+
+#process:hover {
+	background-color: #61CF8B;
+}
+
+#banter:hover {
+	background-color: #9CEBE1;
+}
+
+#illustrations:hover {
+	background-color: #61CF8B;
+}
+
+#beer:hover {
+	background-color: #91E7CE;
+}
+
+#ltc:hover {
+	background-color: #B098C6;
+}
+
+#upstart:hover {
+	background-color: #55DBDA;
+}
+
+#meetinghero:hover {
+	background-color: #E68EA1;
+}
+
+#scholastic:hover {
+	background-color: #9AC3E7;
+}
+
+#betabrand:hover {
+	background-color: #F7B733;
+}
+
+/* Active page in header*/
+
+.active {
+	border-bottom: solid black 3px;
+}
+
+/************** ON SCROLL show n logo *****************/
+
+.show {
+	opacity: 0.9;
+
+}
+
+
+/********************************************************
+					HOME
+ *******************************************************/
+
+#work {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+	align-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#intro {
+	text-align: center;
+	width: 100%;
+	margin-top: 5rem;
+}
+
+#name {
+	margin-bottom: -1rem;
+	margin-top: 0;
+}
+
+#logo-svg {
+	fill: #4A4A4A;
+	transition: all .2s ease-in-out; 
+}
+
+#logo-svg {
+	transition: all .2s ease-in-out; 
+}
+
+#logo-svg:hover {
+	transform: scale(1.1);
+}
+
+#logo:hover {
+	/*fill: #3A517D;*/
+}
+
+
+.portfolio-piece {
+	min-height: 320px;
+	min-width: 360px;
+	margin: 20px;
+}
+
+.portfolio-piece p {
+	transition: transform .2s ease-in-out; 
+	color: #4A4A4A;
+}
+
+.portfolio-img {
+	min-height: 280px;
+	min-width: 360px;
+	background-color: #F2F2F2;
+	transition: all .2s ease-in-out; 
+	vertical-align: middle;
+	/*filter: grayscale(100%);*/
+}
+
+.portfolio-img img{
+	margin: 0 auto;
+	margin-top: 50px;
+	max-width: 300px;
+}
+
+/* HOVER STYLES */
+.portfolio-img:hover {
+	/*background-color: orange;*/
+	transform: scale(1.05);
+	filter: none;
+}
+
+.portfolio-piece:hover p {
+	transform: scale(1.1);
+	transform: translate(0px, 20px);
+	/*color: orange;*/
+	font-weight: 600;
+}
+
+
+
+/********************************************************
+					ABOUT
+ *******************************************************/
+
+#about-page {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	align-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 5rem;
+	align-items: flex-start;
+	max-width: 1000px;
+}
+
+.title {
+	flex: 1 100%;
+	text-align: center;
+	margin-bottom: 0rem;
+}
+
+.first-third {
+	margin: 1rem;
+	max-width: 260px;
+}
+
+.two-thirds {
+	flex-grow: 2;
+	margin: 1rem;
+	max-width: 600px;
+}
+
+#nadine {
+	margin-bottom: 2rem;
+}
+
+/********************************************************
+					CASE STUDIES
+ *******************************************************/
+
+.case-study {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	align-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 5rem;
+	align-items: flex-start;
+	max-width: 1000px;
+}
+
+.next-link { 
+	text-align: right;
+	float: right;
+}
+
+/********************************************************
+						CONTACT
+ *******************************************************/
+
+#contact {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 5rem;
+	max-width: 1000px;
+	min-height: 450px;
+}
+
+.contact-icon {
+	fill: #4A4A4A;
+}
+
+.contact-icon-svg {
+	transition: all .2s ease-in-out; 
+	margin: 20px;
+	transform: scale(1.5);
+}
+
+.contact-icon-svg:hover {
+	transform: scale(2);
+}
+
+.contact-icon:hover {
+	fill: orange;
+}
+
+
+/********************************************************
+						FOOTER
+ *******************************************************/
+
+footer {
+	width: 100%;
+	text-align: center;
+	background-color: #444;
+	color: white;
+	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	padding: 1rem;
+  	margin-top: 3rem;
+}
+
+.social-icon {
+	fill: white;
+}
+
+.social-icons a{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.social-icon-svg {
+	transition: all .2s ease-in-out; 
+}
+
+.social-icon-svg:hover {
+	transform: scale(1.2);
+}
+
+.social-icon:hover {
+	fill: orange;
+}
+
+
+/********************************************************
+					MOBILE STYLES
+ *******************************************************/
+
+@media (max-width: 600px) {
+
+}
+
+
+
+
