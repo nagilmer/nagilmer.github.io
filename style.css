@@ -21,10 +21,11 @@ h1, h2, h3, h4, h5, h6 {
 	color: #4A4A4A;
 }
 
-p {
+p, ul, em{
 	font-family: Assistant, sans-serif;
 	line-height: 1.5rem;
 }
+
 
 h1 {
 	font-size: 4rem;
@@ -32,6 +33,10 @@ h1 {
 
 h2 {
 	font-size: 3rem;
+}
+
+h3 {
+	font-size: 1.8rem;
 }
 
 h4 {
@@ -85,7 +90,7 @@ a:hover {
 }
 
 img {
-	width: 100%;
+	max-width: 100%;
 }
 
 .whole-line {
@@ -345,7 +350,7 @@ ul.topnav li a:hover {
 	max-width: 1000px;
 }
 
-.case-study p {
+.first-third p {
 	margin-top: -0.8rem;
 }
 
@@ -388,6 +393,11 @@ ul.topnav li a:hover {
 	/*color: #0070CD;*/
 	color: #B4184D;
 	display: inline-block;
+}
+
+.two-thirds a:hover{
+	/*font-weight: 600;*/
+	text-decoration: underline;
 }
 
 /********************************************************
@@ -460,6 +470,85 @@ footer {
 }
 
 
+/*******************************************************
+						RESUME
+********************************************************/
+#resume {
+  /*max-width: 900px;
+  margin: auto;
+  margin-top: 60px;
+  display: block;*/
+  width: 80%;
+  margin: auto;
+  max-width: 750px;
+}
+
+.spacer {
+  height: 5em;
+}
+
+#tiny-resume {
+  width: 100px;
+  height: auto;
+  border: solid 1px black;
+}
+
+#resume-logo {
+  float:left;
+  width:120px;
+  height: 100%;
+  margin-right: 20px;
+}
+
+#resume-quote{
+  border-top: 2px gray dotted;
+  border-bottom: 2px gray dotted; 
+  margin-top: 20px; 
+  padding: 20px;
+}
+
+#top-portion{
+  min-height: 120px;
+}
+
+#resume-left {
+  width: 70%;
+  border-right: 2px gray dotted;
+  display: inline-block;
+}
+
+#resume-right {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 20px;
+}
+
+.date {
+  /*float: left;*/
+  font-size: .8rem;
+  width: 25%;
+  margin-top: 0px;
+  vertical-align: top;
+}
+
+.experience-description {
+  width: 70%;
+  margin-top: 0px;
+}
+
+.title-res {
+  margin-top: 0px;
+  margin-bottom: -0.7rem;
+  font-weight: 600;
+  font-family: 'open sans',sans-serif;
+}
+
+.dotted-border-top {
+  border-top: 2px gray dotted;
+  padding-top: 20px;
+  margin-top: 30px;
+}
 /********************************************************
 					MOBILE STYLES
  *******************************************************/

@@ -24,7 +24,7 @@
   <h2 class="whole-line">MEETING HERO</h2>
   <div class="first-third">
     <img class="center" src="img/meetinghero.png">
-    <h4 class="whole-line">Meeting Hero</h4>
+    <h4>Meeting Hero</h4>
     <p>2017</p>
     <p>UI, UX, Prototyping</p>
     <div class=other-cs>
@@ -39,12 +39,100 @@
     </div>
   </div>
   <div class="two-thirds">
-    <p>User centered design personas workflow pitch deck venture capital latte pivot physical computing actionable insight viral. User story thinker-maker-doer user story user story fund engaging unicorn hacker. Viral actionable insight user story cortado pivot responsive fund parallax quantitative vs. qualitative workflow venture capital ship it. Thinker-maker-doer responsive quantitative vs. qualitative physical computing bootstrapping co-working paradigm personas disrupt.
-    </p>
-    <p>Entrepreneur parallax viral pivot co-working innovate thought leader responsive parallax. Co-working affordances prototype venture capital pitch deck unicorn venture capital piverate sticky note pitch deck venture capital grok engaging. 360 campaign co-working pair programming user story integrate ship it actionable insight hacker. Earned media iterate thinker-maker-doer innovate earned media hacker driven engaging co-working quantitative vs. qualitative workflow.
-    </p>
-    <p>Physical computing sticky note quantitative vs. qualitative fund physical computing paradigm disrupt hacker workflow cortado. Human-centered design intuitive quantitative vs. qualitative pivot disrupt pitch deck iterate physical computing bootstrapping driven viral. Moleskine thinker-maker-doer pitch deck convergence bootstrapping SpaceTeam earned media. Integrate physical computing hacker venture capital user story thought leader pitch deck iterate thought leader. Experiential disrupt thinker-maker-doer paradigm parallax innovate disrupt 360 campaign convergence affordances thinker-maker-doer ideate viral Steve Jobs.
-    </p>
+  <h3>Summary</h3>
+    <p>This was three week project for <a href="http://meetinghero.com" target="_blank">Meetinghero</a> 
+        to implement new features and redesign for usability.</p>
+    <p>My client for this project was Meetinghero, a web app that provides a note-taking format to collaborate in real time during meetings. The app was launched recently, and is currently in Beta.</p>
+    <p>My design partner in this project was Affan Khokhar.</P>
+  <h3>PRE-DESIGN PROCESS</h3>
+    <h4>STAKEHOLDER MEETING</h4>
+    <p>From our meeting with the co-founder and CEO, we were given a list of features to implement, but also given some freedom in regards to researching usability issues. He had gotten a lot of feedback on the app in email form, but had not been able to do user testing in person.</P>
+  <h3>Design goal</h3>
+    <p>From this we put together a list of things to focus on:</p>
+    <ul class="gray">
+      <li>User testing</li>
+      <li>Onboarding (helping users understand what meetinghero is)</li>
+      <li>Tweaking the pre-meeting flow for better usability</li>
+      <li>Implementing features
+    <ul>
+      <li>Assigning action items</li>
+      <li>Permissions on meeting attendance and who can see the agenda</li>
+      <li>Emailing from within the app (better send/invite function)</li>
+      <li>Accepting attendance or agenda items</li>
+      <li>Nested items (sub-bullets)</li>
+      <li>Recurring meetings</li>
+      <li>Agenda item timer</li>
+    </ul>
+    </li>
+    </ul>
+  <h3>User Testing</h3>
+    <p>To begin our process, we asked various people to set up a meeting using Meetinghero and then use the app to take notes during their meeting. We asked them to speak out loud during their process, and we took notes and asked questions.</p>
+    <p>We found that there were some unforeseen usability issues with some of the UI elements on the page, as well as a confusing flow.</p>
+    <p>This is a video of some of the user testing we did, illustrating the difficulties with the onboarding process.</p>
+    <iframe class="centered" src="//player.vimeo.com/video/103083225" width="500" height="281" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+    <p>This is a mental model diagram I put together on how users and the stakeholders expect the app will work:</p>
+    <img src="img/IdealMentalModel.png" alt="IdealMentalModel" max-width="100%" height="auto" />
+    <p>And this is a diagram of how it currently flows, especially for those new to Meetinghero:</p>
+    <img src="img/CurrentMentalModel.png" alt="CurrentMentalModel" max-width="100%" height="auto" />
+    <p>After we tested, we began to see patterns of usability and flow issues emerge, and I created this user journey map to illustrate them. The top of this map shoes the journey and the emotions and issues along the way, and the bottom is the design solutions for those issues.</p>
+    <img src="img/Onboarding-Journey-Map-01.png" alt="Onboarding Journey Map-01" max-width="100%" height="auto" />
+  <h3>Personas &amp; Storyboards</h3>
+    <p>From our meeting with the co-founder, we found out who are the main users of Meetinghero, and then interviewed people in those categories to come up with these specific personas.</p>
+    <h4>MIMI</h4>
+      <img src="img/Screen-Shot-2014-08-12-at-7.43.29-AM.png" alt="Persona-Mimi" max-width="100%" height="auto" /> 
+      <img src="img/Screen-Shot-2014-08-12-at-7.43.49-AM.png" alt="Mimis Storyboard
+          " max-width="100%" height="auto"/>
+    <h4>KEVIN</h4>
+      <img src="img/Screen-Shot-2014-08-12-at-7.44.12-AM.png" alt="Persona-Kevin" max-width="100%" height="auto" /> 
+      <img src="img/Screen-Shot-2014-08-12-at-7.44.25-AM.png" alt="Kevins Storyboard" max-width="100%" height="auto" />
+    <h3>Onboarding &amp; Pre-meeting Flow Tweaks</h3>
+      <p>As illustrated with the diagrams above, the flow for the meeting was especially confusing for first time users. Many thought they had to fill out the entire meeting notes format before they could send out the invitations. To fix this, we moved the meeting creation and information editing portion into a completely separate flow. We decided it would be better to put this portion of it, in a light-box form with very clear calls to action.</p>
+      <img src="img/Create-Meeting-Lightbox.png" alt="Create-Meeting-Lightbox" max-width="749" height="auto" />
+      <p>Users were also unsure of what each of the elements in the note-taking format meant. To solve this we added some explanation text to each element so that the users would immediately know what they were for.</p>
+      <p>This is the current note taking format:</p>
+      <img src="img/blankpage-1024x673.png" alt="blankpage" max-width="1024" height="auto" />
+      <p>Here is an example of some of the changes we made:</p>
+      <img src="img/Copy-for-Decision-Items.png" alt="Copy-for-Decision-Items" width="300" height="279" class="centered" />
+    <h3>IMPLEMENTING FEATURES</h3>
+        <img class="FloatRight" src="img/Hover-Plus-Large.png" alt="Hover-Plus-Large" width="300" height="159" />
+      <h4>ASSIGNING ACTION ITEMS</h4>
+          <p>The most requested feature was the ability to assign action items to people in the meeting. We did this by giving users a choice of meeting attendees upon hovering over the "+" at the end of the action item line, then clicking on the face.</p>
+      <h4>PERMISSIONS &amp; EMAILING FROM WITHIN THE APP</h4>
+          <p>We thought that since users were currently signing up with Gmail to use the app, we would keep the share settings similar to the Google Drive share settings, so it would be familiar to the users. This way, when they add attendees they can dictate who they would like to invite, and who they only want to send the agenda to. This would also allow sending from a gmail address instead of always copying the link.</p>
+          <img class="centered" src="img/Share-Settings-Lightbox.png" alt="Share-Settings-Lightbox" max-width="708" height="auto" />
+        <h4>ACCEPTING ATTENDANCE OR AGENDA ITEMS</h4>
+          <p>Our stakeholder wanted to be able to show that a user got the agenda, and is ok with it, and is attending. He also wanted there to be different permissions. This means that some people would only get an Agenda to look over and some would be official invitees to the meeting. To do this, we changed the links in the email to this:</p>
+          <p>For people who were invited to the meeting:</p>
+          <img class="centered" src="img/Attendee-Email-1.jpg" alt="Attendee Email 1" max-width="1200" height="auto" />
+          <p>For those who were sent the agenda only:</p>
+          <img class="centered" src="img/View-Agenda-Email-1.jpg" alt="View Agenda Email 1" max-width="1200" height="auto" />
+          <img class="FloatRight" src="img/nesteditems.png" alt="nesteditems" width="274" height="251" />
+        <h4>NESTED ITEMS</h4>
+          <p>Many users want to be able to create nested items in the lists. We thought the simplest way to do this would be to create them the way most programs do: by entering to create a new line bullet, and tabbing to nest the item.</p>
+        <h4>RECURRING MEETINGS</h4>
+          <p>Users wanted to have a recurring meeting agenda, so we added the option in the meeting creation/settings page box.</p>
+          <img class="centered" src="img/RecurringMeetings-01.png" alt="RecurringMeetings" max-width="750" height="auto"/>
+        <h4>AGENDA ITEM TIMER</h4>
+          <img class="FloatLeft" src="img/little-timer.png" alt="original timer" width="auto" height="80" />
+          <p>One of our tasks was to create a timer for each agenda item as well as the overall meeting timer. We knew that users were particularly fond of the current design, and the developers behind it already knew how to make it, so we didn't want to stray too far from the original. After several concepts we came up with this:</p>
+          <img src="img/clock.png" alt="clock" width="190" height="300" />
+          <img src="img/AgendaWithRedDot.png" width="300" height="300" />
+          <p>The red dot by the agenda signifies with agenda item is currently being discussed.</p>
+      <h3>Bonus UI/Usability Suggestions</h3>
+        <p>We began our design process by changing the dashboard and navigation of the app, because we felt that users were confused when they came to the home page, and it was difficult to locate what they needed from past meetings. From what we understood from the mental model, and testing on our designs, the app would benefit from a dashboard. However, we realized it would be hard to implement the features our stakeholders requested from us on top of huge changes to the app, so we left them aside, and delivered them as suggestions to be implemented at a later time.</p>
+        <h4>DASHBOARD</h4>
+          <img src="img/Dashboard.png"  max-width="798" height="auto" />
+        <h4>PREVIOUS MEETINGS AND SECONDARY NAVIGATION FILTER</h4>
+          <img src="img/Action-Items.jpg" alt="Action Items" max-width="669" height="auto" /></a>
+        <h4>FILTER</h4>
+          <p>Currently, the filter on the main page seems unintuitive to most users. We proposed an edit so that it would filter by calendar rather than meetings with two or more people.</p>
+          <img src="img/Filters.png" alt="Screen Shot 2014-08-12 at 8.03.56 AM" max-width="669" height="auto" />
+      <h3>Prototypes</h3>
+        <p>Useability and feature change prototype:</p>
+        <a class="button prototype"class="button prototype"href="https://projects.invisionapp.com/share/P316J45Q4#/screens" target="_blank">View prototype</a> 
+        <p>Bonus UX/UI suggestions prototype:</p>
+        <a class="button prototype"href="https://projects.invisionapp.com/share/8516QT0BG#/screens/31804024?maintainScrollPosition=false" target="_blank">View prototype</a> 
+  </div>
   </div>
 </wrapper>
 </body>
