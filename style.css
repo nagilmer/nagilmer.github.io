@@ -350,6 +350,10 @@ ul.topnav li a:hover {
 	max-width: 1000px;
 }
 
+/*.first-third {
+	position: fixed;
+}*/
+
 .first-third p {
 	margin-top: -0.8rem;
 }
@@ -398,6 +402,20 @@ ul.topnav li a:hover {
 .two-thirds a:hover{
 	/*font-weight: 600;*/
 	text-decoration: underline;
+}
+
+.fifty-percent {
+	width: 49%;
+	display: inline-block;
+}
+
+.space-top {
+	margin-top: 2rem;
+}
+
+.FloatLeft {
+	float: left;
+	margin-right: 1rem;
 }
 
 /********************************************************
