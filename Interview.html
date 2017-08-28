@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Assistant:400,600" rel="stylesheet">
   <link rel="stylesheet" href="font-awesome.css">
+  <script src="https://use.fontawesome.com/b163df9b9b.js"></script>
 </head>
 
 <body>
@@ -40,12 +41,63 @@
   </div>
   </div>
   <div class="two-thirds">
-    <p>User centered design personas workflow pitch deck venture capital latte pivot physical computing actionable insight viral. User story thinker-maker-doer user story user story fund engaging unicorn hacker. Viral actionable insight user story cortado pivot responsive fund parallax quantitative vs. qualitative workflow venture capital ship it. Thinker-maker-doer responsive quantitative vs. qualitative physical computing bootstrapping co-working paradigm personas disrupt.
-    </p>
-    <p>Entrepreneur parallax viral pivot co-working innovate thought leader responsive parallax. Co-working affordances prototype venture capital pitch deck unicorn venture capital piverate sticky note pitch deck venture capital grok engaging. 360 campaign co-working pair programming user story integrate ship it actionable insight hacker. Earned media iterate thinker-maker-doer innovate earned media hacker driven engaging co-working quantitative vs. qualitative workflow.
-    </p>
-    <p>Physical computing sticky note quantitative vs. qualitative fund physical computing paradigm disrupt hacker workflow cortado. Human-centered design intuitive quantitative vs. qualitative pivot disrupt pitch deck iterate physical computing bootstrapping driven viral. Moleskine thinker-maker-doer pitch deck convergence bootstrapping SpaceTeam earned media. Integrate physical computing hacker venture capital user story thought leader pitch deck iterate thought leader. Experiential disrupt thinker-maker-doer paradigm parallax innovate disrupt 360 campaign convergence affordances thinker-maker-doer ideate viral Steve Jobs.
-    </p>
+    <p>I worked on this project in the summer of 2016 while I was a Product Designer at SmartRecruiters. I was the sole designer, and I worked with the Product Manager in charge of this feature set (Natalia Baryshnikova). The goal was to improve the experience of our interview scheduling wizard, and we only had a few weeks to achieve this before it went to development.</p> 
+
+    <p>It was previously limited to a form that users would fill out, which would generate an invitation to the candidate and the interview panel either via SmartRecruiters messaging system, or an integration with Google Calendar or Office 360.</p> 
+
+    <p>We wanted to make this feature easier to use, and more delightful. Scheduling interviews is a very common, and very labor intensive task in the product, and we wanted to cut out some of the steps it took users to do this. </p>
+
+    <h3>Research</h3>
+
+      <p>When I began the project, another designer, and the Product Manager had already done some research on the project. I took what they had done, and conducted some tests of my own - both on our current scheduling wizard, and common scheduling tools that our personas were using to schedule interviews outside of SmartRecruiters. I paid special attention to the order in which ours users needed certain information, and how they wanted to handle the messaging portion of it. </p>
+
+      <p>The issues we identified were that users didn’t know who was on the hiring team, and had to manually check availability in the dropdowns one by one to find a common time. This resulted in users having to leave the product to find the right time and the right people, then come back to the form and fill it out. </p>
+
+      <p>Setting up panel interviews was also a challenge for users, since the form was set up by type of interview, and not “slot” which meant that information was being repeated. </p>
+
+      <p>Another issue was that finding information about past and upcoming interviews was difficult to do. Users couldn’t see who was in what time slot on the interview scheduling page without accidentally scheduling another interview. </p>
+
+      <p>In addition to these problems, users wanted to be able to select a type of interview (e.g. lunch interview, office tour, partner coding exercise etc.) and assign it to a group of people in a panel. </p>
+
+      <a href="img/old-wizard.png" target=blank><img src="img/old-wizard.png"></a>
+
+    <h3>Scope</h3>
+      <p>There are many, many things that could be done in this interview scheduler. Based on our research, we would have liked to do more around candidate self-scheduling, or have a way to read everyone’s schedule and spit out the best times for panel interviews - but we decided we needed to have an easier to use foundation for these feature features to be built correctly. </p>
+
+      <p>Aside from adding the “type” field, we constrained the scope to UI changes for improved user experience. For this reason, I find this project very interesting. Just using design thinking, research, and UI design, together with the front end engineer, we made vast improvements to the UX of this feature without having to add any major features. </p>
+
+    <h3>The prototype</h3>
+      <p>The biggest change I made was turning our form into a calendar picker like what exists in Google Calendar and Office 360. I put the hiring team front and center so the user could see their schedules at the same time, and choose a good slot without having to go into any other products (unless they don’t have an integration). </p>
+
+      <a href="img/lots-of-schedules.png" target=blank><img src="img/lots-of-schedules.png"></a>
+
+      <a href="img/modal.png" target=blank><img src="img/modal.png"></a>
+
+      <p>It was essential to me that users test this feature before it went into development, but it was extremely hard to test without actually coding it. We unfortunately did not have the resources to do a beta program, or have a coded prototype, so I used InVision to create a clickable prototype with dozens of screens. </p>
+
+      <p>This gave us a basic understanding of what we were missing, and which parts were confusing, but it was difficult to test the microinteractions that we added to the calendar. To circumvent this, I actually asked people to use their own scheduling software and go through the same exercise I gave the users in the tests for my prototype. </p>
+
+      <p>These tests showed that the basic principle of the redesign was a good one, but we had a few things to tweak. We changed the axis on the calendar so that the columns represent hiring team members, and slightly altered the format of the summary under the calendar. </p>
+
+      <a href="img/summary.png" target=blank><img src="img/summary.png"></a>
+
+      <p>Then it moved into development! </p>
+
+    <h3>Results</h3> 
+      <p>Almost a year after releasing the feature, we compared data from just before the release and were pleased to find marked improvement.</p>
+
+        <ul>
+        <li>The average number of attendees increased 13.3% (15.3% if we exclude phone interviews that are mostly 1:1 screening interviews). This shows us that it’s easier to schedule panel interviews, which was one of our original goals. </li>
+        <li>The average number of companies scheduling interviews daily increased 25.4%</li>
+        <li>The average number of interviews per company increased 29.9%</li>
+        <li>The average number of people interviewed daily increased 60.4%</li>
+        <li>The average number of interviews scheduled daily increased 61.6%</li> 
+        </ul>
+
+      <p>Although the results were quite positive, we did encounter a few snags due to the fact that we weren’t able to test the coded version much before it entered production, but we were able to fix most of the issues as small feature enhancements in the next release. </p>
+
+      <p>As I mentioned before, it’s truly amazing when you can see the power of research and design. Sometimes just changing the layout of a page can result in it being used 61% more!</p>
+
   </div>
 </wrapper>
 </body>
