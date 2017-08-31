@@ -469,7 +469,10 @@ footer {
   	left: 0;
   	padding: 1rem;
   	margin-top: 3rem;
-  	position: absolute;
+}
+
+.bottom {
+  bottom: 0;
 }
 
 .social-icon {
