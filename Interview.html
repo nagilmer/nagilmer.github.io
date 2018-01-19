@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <ul class="topnav">
+  <ul class="topnav"> 
     <li><a href="index.html"><img src="nglogo.svg" class="nav-logo"></a></li>
     <li><a class="active" href="index.html">Work</a></li>
     <li><a href="about.html">About</a></li>
@@ -40,61 +40,158 @@
     </div>
   </div>
   </div>
-  <div class="two-thirds">
-    <p>I worked on this project in the summer of 2016 while I was a Product Designer at SmartRecruiters. I was the sole designer, and I worked with the Product Manager in charge of this feature set (Natalia Baryshnikova). The goal was to improve the experience of our interview scheduling wizard, and we only had a few weeks to achieve this before it went to development.</p> 
+  <div class="two-thirds"> 
+      <p>I worked on this project in the summer of 2016 while I was a 
+        Product Designer at SmartRecruiters. I was the sole designer, 
+        and I worked with the product manager in charge of this feature set 
+        (Natalia Baryshnikova). The goal was to improve the experience of our 
+        interview scheduling wizard, and we only had a few weeks to achieve 
+        this before it went to development. I was also going on vacation 2 
+        weeks before it had to go into development. I wanted to make sure 
+        it was done before that with enough time for the dev team to ask 
+        questions.</p> 
+        
+      <p>The scheduling wizard was previously limited to a form that users 
+          would fill out, which would generate an invitation to the candidate 
+          and the interview panel either via SmartRecruiters messaging system, 
+          or an integration with Google Calendar or Office 360. </p>
+      <a href="img/old-wizard.png" target=blank alt="the original scheduling wizard"><img src="img/old-wizard.png"></a>
+      <p class="caption">The original scheduling wizard</p> 
+      <p>We wanted to make this feature easier to use, and more delightful. 
+          Scheduling interviews is a very common and labor-intensive task 
+          in the product, and we wanted to cut out some steps for users.</p>
+    <h3>Initial Research</h3>
 
-    <p>It was previously limited to a form that users would fill out, which would generate an invitation to the candidate and the interview panel either via SmartRecruiters messaging system, or an integration with Google Calendar or Office 360.</p> 
+      <p>When I began the project, another designer and the product manager had 
+        already done some research, so I took what they had done and conducted 
+        some tests of my own.</p>
+      <p>I began testing internally with our recruiter, observing him schedule 
+          interviews with our current scheduling wizard and paying close attention 
+          to the pain-points. Over video calls, I watched what our users were doing 
+          in their own processes and with their own tools.</p>
+      <p>I conducted phone calls with our users, asking them questions to determine:</p>
+          <ul>
+        <li>Who typically schedules the interviews</li>
+        <li>What the typical flow is</li>
+        <li>How common panel interviews are</li>
+        <li>What the current pain points are</li>
+      </ul>
 
-    <p>We wanted to make this feature easier to use, and more delightful. Scheduling interviews is a very common, and very labor intensive task in the product, and we wanted to cut out some of the steps it took users to do this. </p>
+    <h3>Problems Identified</h3>
+      <p>We identified that users often didn’t have each job's hiring team memorized
+        and had to manually check availability in the dropdowns one by one to find a common time.  
+         This resulted in users having to leave the product to find the right time 
+         and the right people before filling out the form.
+         Usually, users would find a time that worked for everyone involved 
+         via Google Calendar or Outlook and then input that information into 
+         SmartRecruiters. </p>
 
-    <h3>Research</h3>
-
-      <p>When I began the project, another designer, and the Product Manager had already done some research on the project. I took what they had done, and conducted some tests of my own - both on our current scheduling wizard, and common scheduling tools that our personas were using to schedule interviews outside of SmartRecruiters. I paid special attention to the order in which ours users needed certain information, and how they wanted to handle the messaging portion of it. </p>
-
-      <p>The issues we identified were that users didn’t know who was on the hiring team, and had to manually check availability in the dropdowns one by one to find a common time. This resulted in users having to leave the product to find the right time and the right people, then come back to the form and fill it out. </p>
-
-      <p>Setting up panel interviews was also a challenge for users, since the form was set up by type of interview, and not “slot” which meant that information was being repeated. </p>
-
-      <p>Another issue was that finding information about past and upcoming interviews was difficult to do. Users couldn’t see who was in what time slot on the interview scheduling page without accidentally scheduling another interview. </p>
-
-      <p>In addition to these problems, users wanted to be able to select a type of interview (e.g. lunch interview, office tour, partner coding exercise etc.) and assign it to a group of people in a panel. </p>
-
-      <a href="img/old-wizard.png" target=blank><img src="img/old-wizard.png"></a>
+         <a href="img/google-outlook-sr.png" target=blank alt="SmartRecruiters overlayed over Google calendar and outlook"><img src="img/google-outlook-sr.png"></a>
+         <p class="caption">Users had to exit SmartRecruiters to schedule via Google or Outlook</p>         
+         <p>Setting up panel interviews was also a challenge for users, since the slots 
+          were set up by stage in the hiring process, instead of by times. It’s unlikely that a 
+          user would want to schedule an interview in two parts of the hiring process 
+          at once. </p>
+          <a href="img/stages.png" target=blank alt="stages tied to slots"><img src="img/stages.png"></a>
+          <p class="caption">The slots were tied to steps in the hiring processs</p>         
+          <p>Another issue was that there was no way to see information about past or 
+          upcoming interviews within SmartRecruiters. They could only see that 
+          an interview had been scheduled, but without any of the details. Furthermore, because the 
+          form was always open on the tab, they couldn’t see these details without 
+          accidentally scheduling another interview. </p>
+        <p>Users also wanted control over the title of the interview invite that 
+          was sent out to the candidate, as well as visibility of what 
+          the candidate would see in the invitation. </p>
+        <p>In addition to these problems, users wanted to be able to select a 
+         type of interview (e.g. lunch interview, office tour, partner coding 
+         exercise etc.) and assign it to a group of people in a panel. </p>
 
     <h3>Scope</h3>
-      <p>There are many, many things that could be done in this interview scheduler. Based on our research, we would have liked to do more around candidate self-scheduling, or have a way to read everyone’s schedule and spit out the best times for panel interviews - but we decided we needed to have an easier to use foundation for these feature features to be built correctly. </p>
+        <p>Aside from adding the “type” field, we constrained the scope of the project
+          to only UI/UX changes.  This is what makes this project so interesting; 
+          Just using design thinking, 
+          research, and UI design, together with the front end engineer, 
+          we made vast improvements to the UX of this feature without having 
+          to add any major features. </p>
 
-      <p>Aside from adding the “type” field, we constrained the scope to UI changes for improved user experience. For this reason, I find this project very interesting. Just using design thinking, research, and UI design, together with the front end engineer, we made vast improvements to the UX of this feature without having to add any major features. </p>
+    <h3>Prototyping & Testing</h3>
+      <p>I began with some low-fidelity wireframes that I tested internally. 
+        Once we were happy with a concept, I created a few prototypes using 
+        Sketch, Marvel, and InVision and tested them over video calls with 
+        some of our users.  </p>
+      <h4>Version 1</h4>
+        <p>We first explored a version that would automatically calculate the 
+          time slots available based on some inputs. The user would pick who 
+          should be in each slot and the duration of the slot, and then we 
+          would show them some times that worked. </p>
+        <video controls="controls" width="100%"  name="Video Name" src="videos/interview1.mov"></video>
+        <p class="caption">A video of Version 1 time suggestion flow</p>
+        
+        <p>This worked really well for 1:1 interviews, such as recruiter screens 
+          or hiring manager interviews, but it was trickier when it came to scheduling panel 
+          interviews with multiple interviewers and slots. </p>
+        
+        <p>When we tested this prototype, we realized that users still had to 
+          leave to see which hiring team members were available for a panel 
+          interview. Users rarely knew ahead of time exactly which 
+          team member should be in which slot, or even who was on 
+          the hiring team.</p>
+        <video controls="controls" width="100%" name="Video Name" src="videos/interview2.mov"></video>
+        <p class="caption">A video of Version 1 calendar flow</p>
 
-    <h3>The prototype</h3>
-      <p>The biggest change I made was turning our form into a calendar picker like what exists in Google Calendar and Office 360. I put the hiring team front and center so the user could see their schedules at the same time, and choose a good slot without having to go into any other products (unless they don’t have an integration). </p>
+        <p>It was also hard to visualize the candidate’s availability without seeing a calendar. 
+          Because of this, we provided an option to schedule 
+          via the time suggestions or with the calendar. In general, users chose to use the 
+          calendar option. </p>
+      <h4>Version 2</h4>
+        <p>The second version was a blank calendar (defaulted to the user’s schedule) 
+        where they could see all the hiring team members and their schedules. </p>
+        <video controls="controls" width="100%" name="Video Name" src="videos/interview4.mov"></video>
+        <p class="caption">A video of Version 2 calendar flow</p>
+        <p>From watching people use other calendars to schedule panel interviews, 
+          I saw that they would begin by looking at all of the team members' calendars 
+          at the same time to determine which day might be best. Then, they would 
+          remove all of the team members and schedule the panel one slot at a time, 
+          scheduling only for the team members whose calendars were exposed. To eliminate a step
+          for the user, we pre-filled the “who” field with the team members whose calendars were 
+          exposed. </p>
+          <a href="img/details.png" target=blank alt="details modal"><img src="img/details.png"></a>
+        <p>We also added an extra field for "interview type", which was a highly requested 
+          feature. This allows users to assign each slot a different interview objective 
+          e.g. “office tour,” “skills test,” “pair programming,” or “lunch interview.”</p>
+      <h4>Version 3</h4>
+          <p>This version was well-received, but when we showed the prototype to the 
+            developers, they suggested that it would create performance issues to have 
+            a modal over a modal. We decided to give the scheduling wizard its own page 
+            instead.</p>
+          <video controls="controls" width="100%"  name="Video Name" src="videos/interview5.mov"></video>
+          <p class="caption">A video of Version 3</p>
 
-      <a href="img/lots-of-schedules.png" target=blank><img src="img/lots-of-schedules.png"></a>
+          <p>In addition to the scheduling wizard, we also added more information 
+            on the “interview” tab so that users could see the details of past and 
+            upcoming interviews. </p>
+          <a href="img/interview-tab.png" target=blank alt="details modal"><img src="img/interview-tab.png"></a>
 
-      <a href="img/modal.png" target=blank><img src="img/modal.png"></a>
 
-      <p>It was essential to me that users test this feature before it went into development, but it was extremely hard to test without actually coding it. We unfortunately did not have the resources to do a beta program, or have a coded prototype, so I used InVision to create a clickable prototype with dozens of screens. </p>
+      <!-- <a href="img/lots-of-schedules.png" target=blank><img src="img/lots-of-schedules.png"></a>
 
-      <p>This gave us a basic understanding of what we were missing, and which parts were confusing, but it was difficult to test the microinteractions that we added to the calendar. To circumvent this, I actually asked people to use their own scheduling software and go through the same exercise I gave the users in the tests for my prototype. </p>
+      <a href="img/modal.png" target=blank><img src="img/modal.png"></a> -->
 
-      <p>These tests showed that the basic principle of the redesign was a good one, but we had a few things to tweak. We changed the axis on the calendar so that the columns represent hiring team members, and slightly altered the format of the summary under the calendar. </p>
-
-      <a href="img/summary.png" target=blank><img src="img/summary.png"></a>
-
-      <p>Then it moved into development! </p>
+      <!-- <a href="img/summary.png" target=blank><img src="img/summary.png"></a> -->
 
     <h3>Results</h3> 
       <p>Almost a year after releasing the feature, we compared data from just before the release and were pleased to find marked improvement.</p>
 
         <ul>
-        <li>The average number of attendees increased 13.3% (15.3% if we exclude phone interviews that are mostly 1:1 screening interviews). This shows us that it’s easier to schedule panel interviews, which was one of our original goals. </li>
-        <li>The average number of companies scheduling interviews daily increased 25.4%</li>
-        <li>The average number of interviews per company increased 29.9%</li>
-        <li>The average number of people interviewed daily increased 60.4%</li>
-        <li>The average number of interviews scheduled daily increased 61.6%</li> 
+        <li>The average number of attendees increased by 13.3% (15.3% if we exclude phone interviews that are mostly 1:1 screening interviews). 
+          This shows us that it’s easier to schedule panel interviews, which was one of our original goals. </li>
+        <li>The average number of companies scheduling interviews daily increased by 25.4%</li>
+        <li>The average number of interviews per company increased by 29.9%</li>
+        <li>The average number of people interviewed daily increased by 60.4%</li>
+        <li>The average number of interviews scheduled daily increased by 61.6%</li> 
         </ul>
 
-      <p>Although the results were quite positive, we did encounter a few snags due to the fact that we weren’t able to test the coded version much before it entered production, but we were able to fix most of the issues as small feature enhancements in the next release. </p>
+      <p>Although the results were quite positive, we did encounter a few snags due to the fact that we weren’t able to test the coded version much before it entered production. However, we were able to fix most of the issues as small feature enhancements in the next release. </p>
 
       <p>As I mentioned before, it’s truly amazing when you can see the power of research and design. Sometimes just changing the layout of a page can result in it being used 61% more!</p>
 

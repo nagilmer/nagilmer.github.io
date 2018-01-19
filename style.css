@@ -431,6 +431,12 @@ ul.topnav li a:hover {
 	margin-right: 1rem;
 }
 
+.caption {
+	color: gray;
+	margin-top: 0;
+	font-size: 0.8rem;
+}
+
 /********************************************************
 						CONTACT
  *******************************************************/
