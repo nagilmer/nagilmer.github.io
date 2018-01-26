@@ -13,6 +13,9 @@ body {
 	height: 100%;
 	margin: 0 auto;
 	/*text-align: center;*/
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -321,6 +324,7 @@ ul.topnav li a:hover {
 	margin-top: 5rem;
 	align-items: flex-start;
 	max-width: 1000px;
+	flex: 1;
 }
 
 .title {
@@ -448,6 +452,7 @@ ul.topnav li a:hover {
 	margin-top: 5rem;
 	max-width: 1000px;
 	min-height: 450px;
+	flex: 1;
 }
 
 .contact-icon {
