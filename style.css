@@ -168,6 +168,11 @@ ul.topnav li a:hover {
 	transition: 1s;
 }
 
+.little-logo {
+	height: 40px;
+	margin: 0;
+}
+
 #interview:hover {
 	background-color: #F17E6F;
 }
