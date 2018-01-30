@@ -441,6 +441,11 @@ ul.topnav li a:hover {
 	font-size: 0.8rem;
 }
 
+.two-wrapper {
+	display: flex;
+	align-items: flex-start;
+}
+
 /********************************************************
 						CONTACT
  *******************************************************/
