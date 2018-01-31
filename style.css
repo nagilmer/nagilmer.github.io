@@ -168,11 +168,6 @@ ul.topnav li a:hover {
 	transition: 1s;
 }
 
-.little-logo {
-	height: 40px;
-	margin: 0;
-}
-
 #interview:hover {
 	background-color: #F17E6F;
 }
@@ -449,6 +444,10 @@ ul.topnav li a:hover {
 .two-wrapper {
 	display: flex !important;
 	align-items: flex-start !important;
+}
+
+.rotate-90 {
+	transform: rotate(90deg);
 }
 
 /********************************************************
