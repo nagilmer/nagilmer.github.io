@@ -41,7 +41,9 @@
   </div>
   </div>
   <div class="two-thirds"> 
-    <img src="img/onboarding.png">  
+    <a href="img/onboarding.png"></a><img src="img/onboarding.png"></a> 
+    <p class="caption">App onboarding screens</p>
+
     <p>The Field Recruiting App (affectionately known internally as ‘the FRAPP’)
          is an app that allows users to capture candidates’ resumes offline. The 
          typical persona for this app would be a recruiter at a job fair or 
@@ -51,15 +53,16 @@
         
       <p>I worked on this project in late 2016 with our mobile team (one iOS developer, an Android developer, and our product manager). The idea came from an internal hackathon, during which the team created a way to take a picture of a resume and parse the information into the core app.  </p>
       <img src="img/loading-resume.gif">
+      <p class="caption">Resume parsing state</p>
+
       <h3>Initial Research</h3>
 
       <p>We began our research by conducting contextual inquiries. The product manager (Kelly Fang) and I went to a job fair, and spoke with the recruiters and the candidates to discern what the pains and complications were with the process, as well as understand whether our app would be useful to them. The idea was indeed well-received, and would be solving various issues for them. </p>
-      <p>I began testing internally with our recruiter, observing him schedule 
-          interviews with our current scheduling wizard and paying close attention 
-          to the pain-points. Over video calls, I watched what our users were doing 
-          in their own processes and with their own tools.</p>
-      <p>We also spoke with some of our customers about their pains and how they might use the app. One of our companies, Alaska Airlines, relies heavily on job fairs to draw in potential pilots and flight attendants into their talent pool. Other companies would use the app to take applications in-store instead of directing their candidates to apply online. </p>
+      <p>We also spoke with some of our customers about their pains, and how they might use the app. One of our companies, Alaska Airlines, relies heavily on job fairs to draw in potential pilots and flight attendants into their talent pool. Other companies would use the app to take applications in-store instead of directing their candidates to apply online. </p>
       <p>As far as we could find, there are no other apps that perform this specific function, so our competitive analysis was directed towards apps that have a similar interaction in that they have an employee flow and a customer flow. We looked at sign-in apps like Envoy, check-out apps like Square, and even in-store help apps like the ones at Target. </p>
+        <img src="img/ios-and-android.png">
+        <p class="caption">Mobile versions of android and iOS</p>
+
     <h3>Problems Identified</h3>
       <p>From our conversations with users and potential users, we were able to identify some key problems we could solve with the FRAPP.  </p>       
       <ul>
@@ -73,6 +76,7 @@
       <p>The solution was to create two flows; one for internal users to set up which jobs, source, and brand they wanted prospective candidates to see (kiosk mode), and one for candidates to quickly submit their resumes. </p>
       <img class="fifty-percent" src="img/Wireframe1.png"> 
       <img class="fifty-percent" src="img/Wireframe2.png">
+      <p class="caption">Wireframes we tested</p>
       <p>The product manager and I tested this prototype internally, and once we refined the flows we were faced with a few more questions: </p>
       <ul>
         <li>What is the best way for users to be able to exit kiosk mode?  </li>
@@ -82,6 +86,7 @@
       </ul>
       <p>With these questions in hand, we returned to users with a higher fidelity prototype to test and understand their needs better. </p>
       <img src="img/Flows.png">
+      <p class="caption">Flow of recruiter and candidate before, during, and after the event.</p>
       <h4>UNLOCKING KIOSK MODE</h4>
       <p>We tested several methods for unlocking kiosk mode and getting back to build mode including:</p>
       <ul>
@@ -91,6 +96,7 @@
       </ul>
       <p>The touch option seemed the most secure and simple, so we went with that. </p>
       <img src="img/exit-kiosk.png">
+      <p class="caption">Options for exiting kiosk mode</p>
       <h4>SETTING UP THE INTERFACE FOR CANDIDATES</h4>
       <div class="two-wrapper">
       <div class="fifty-percent"> 
