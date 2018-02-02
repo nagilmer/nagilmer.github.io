@@ -41,7 +41,7 @@
   </div>
   </div>
   <div class="two-thirds"> 
-    <a href="img/onboarding.png"></a><img src="img/onboarding.png"></a> 
+    <a href="img/onboarding.png"><img src="img/onboarding.png"></a> 
     <p class="caption">App onboarding screens</p>
 
     <p>The Field Recruiting App (affectionately known internally as ‘the FRAPP’)
@@ -52,7 +52,7 @@
           iOS. </p> 
         
       <p>I worked on this project in late 2016 with our mobile team (one iOS developer, an Android developer, and our product manager). The idea came from an internal hackathon, during which the team created a way to take a picture of a resume and parse the information into the core app.  </p>
-      <img src="img/loading-resume.gif">
+      <a href="img/loading-resume.gif"><img src="img/loading-resume.gif"></a>
       <p class="caption">Resume parsing state</p>
 
       <h3>Initial Research</h3>
@@ -60,7 +60,7 @@
       <p>We began our research by conducting contextual inquiries. The product manager (Kelly Fang) and I went to a job fair, and spoke with the recruiters and the candidates to discern what the pains and complications were with the process, as well as understand whether our app would be useful to them. The idea was indeed well-received, and would be solving various issues for them. </p>
       <p>We also spoke with some of our customers about their pains, and how they might use the app. One of our companies, Alaska Airlines, relies heavily on job fairs to draw in potential pilots and flight attendants into their talent pool. Other companies would use the app to take applications in-store instead of directing their candidates to apply online. </p>
       <p>As far as we could find, there are no other apps that perform this specific function, so our competitive analysis was directed towards apps that have a similar interaction in that they have an employee flow and a customer flow. We looked at sign-in apps like Envoy, check-out apps like Square, and even in-store help apps like the ones at Target. </p>
-        <img src="img/ios-and-android.png">
+        <a href="img/ios-and-android.png"><img src="img/ios-and-android.png"></a>
         <p class="caption">Mobile versions of android and iOS</p>
 
     <h3>Problems Identified</h3>
@@ -74,9 +74,11 @@
     <h3>Prototyping & Testing</h3>
       <p>I began by creating a paper and pen wireframe that I put into a prototype. From the conversations we had, we knew that this app would be primarily used on a tablet. Because of this, I created the prototype in a tablet size and tested it on an iPad. </p>
       <p>The solution was to create two flows; one for internal users to set up which jobs, source, and brand they wanted prospective candidates to see (kiosk mode), and one for candidates to quickly submit their resumes. </p>
-      <img class="fifty-percent" src="img/Wireframe1.png"> 
-      <img class="fifty-percent" src="img/Wireframe2.png">
-      <p class="caption">Wireframes we tested</p>
+      <!-- <a href="img/Wireframe1.png"><img class="fifty-percent" src="img/Wireframe1.png"> </a>
+      <a href="img/Wireframe2.png"><img class="fifty-percent" src="img/Wireframe2.png"></a>
+      <p class="caption">Wireframes we tested</p> -->
+      <a href="img/Flows.png"><img src="img/Flows.png"></a>
+      <p class="caption">Flow of recruiter and candidate before, during, and after the event.</p>
       <p>The product manager and I tested this prototype internally, and once we refined the flows we were faced with a few more questions: </p>
       <ul>
         <li>What is the best way for users to be able to exit kiosk mode?  </li>
@@ -94,9 +96,11 @@
         <li>Having a specific touch gesture.</li>
       </ul>
       <p>The touch option seemed the most secure and simple, so we went with that. </p>
-      <img src="img/exit-kiosk.png">
+      <a href="img/exit-kiosk.png"><img src="img/exit-kiosk.png"></a>
       <p class="caption">Options for exiting kiosk mode</p>
       <h4>SETTING UP THE INTERFACE FOR CANDIDATES</h4>
+      <a href="img/build.png"><img src="img/build.png"></a>
+      <p class="caption">"Build mode" on iOS</p>
       <div class="two-wrapper">
       <div width="75%"> 
         <p>From our talks with users, we determined that they needed to specify these three things: </p>
@@ -106,26 +110,30 @@
           <li>Custom source</li>
         </ul>
       </div>
-      <img width="25%" src="img/add-jobs.gif">
+      <a href="img/add-jobs.gif"><img width="25%" src="img/add-jobs.gif"></a>
       </div>
-      <a href="img/build.png"><img src="img/build.png"></a>
+      <div class="two-wrapper">
+        <a class="fifty-percent" style= "margin-right:5px;" href="img/a_build.png"><img src="img/a_build.png"></a>
+        <a class="fifty-percent" href="img/a_settings.png"><img src="img/a_settings.png"></a>
+      </div>
+      <p class="caption">"Build mode" on Android</p>
       <h4>CANDIDATE APPLICATION FLOW</h4>
       <p>As we found during our interviews, not all candidates have resumes. This meant that we had to create a super-quick alternate experience for these users.</p>
       <video controls="controls" height="500px" width="100%"  name="Interview 1" src="http://nadinegilmer.com/videos/android-application-flow.mov"></video>
-
+      <p class="caption">Candidate application flow</p>
+      <a href="img/a_did-parse.png"><img src="img/a_did-parse.png"></a>
+      <p class="caption">Successful parsing on Android landscape view</p>
       <h4>NOTATIONS ON RESUMES</h4>
       <p>During our contextual interviews, we found that recruiters will typically write a note in the white space of a candidate’s resume to be able to remember them when they sort through the pile later. We considered many options on how we could do this using the app, but realized the format simply wasn’t conducive to that. The candidate would have to hand the app back and forth, and the flow of information would be lost. </p>
       <p>Luckily, there is already a way to do this using the companion app.  As the candidates are coming in, they will show up inside the app, and recruiters can take notes there if they talk to a candidate they want to keep track of. </p>
-      <img src="img/Flows.png">
-      <p class="caption">Flow of recruiter and candidate before, during, and after the event.</p>
       <h3>Visual Design & Branding</h3>
     <p>With the flows sorted out, I moved on to the visual design and branding of the app. It needed it’s own logo and style that would make it seem like part of a suite, but also a separate app. </p>
     <p>In general, I kept the styles closely aligned to Google’s Material Design guidelines and Apple’s Human Interface Guidelines. I kept our bright brand green, and chose a deep purple to compliment it. </p>
-    <img src="img/color_scheme.png">
+    <a href="img/color_scheme.png"><img src="img/color_scheme.png"></a>
     <p>I also designed an icon for it. I went through several iterations, focusing on the “field” aspect of it. </p>
-    <img src="img/Progression_of_logo.png">
+    <a href="img/Progression_of_logo.png"><img src="img/Progression_of_logo.png"></a>
     <p>In the end, the team opted to go with a simple option that is similar to the companion app. </p>
-    <img src="img/logos.png">
+    <a href="img/logos.png"><img src="img/logos.png"></a>
     <h3>Conclusion</h3>
     <p>The end result is a simple experience for setting up a quick job list landing page, and a simple apply. We demoed the application flow at our first annual Hiring Success Conference in April of 2016.</p>
   </div>
