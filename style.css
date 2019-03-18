@@ -172,6 +172,11 @@ ul.topnav li a:hover {
 	background-color: #F17E6F;
 }
 
+#browser:hover {
+	/*background-color: #1165E5;*/
+	background-color: #6113AF;
+}
+
 #process:hover {
 	background-color: #61CF8B;
 }
@@ -336,6 +341,15 @@ ul.topnav li a:hover {
 .first-third {
 	margin: 1rem;
 	width: 260px;
+}
+
+@media (max-width: 924px) {
+	.first-third {
+		width: 80%;
+	}
+	.two-thirds {
+		max-width: 80%;
+	}
 }
 
 .two-thirds {
