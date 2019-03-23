@@ -177,6 +177,11 @@ ul.topnav li a:hover {
 	background-color: #6113AF;
 }
 
+#wedding:hover {
+	/*background-color: #1165E5;*/
+	background-color: #0B493F;
+}
+
 #process:hover {
 	background-color: #61CF8B;
 }
