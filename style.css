@@ -278,7 +278,7 @@ ul.topnav li a:hover {
 }
 
 #logo-svg:hover {
-	transform: scale(1.1);
+	/* transform: scale(1.1); */
 }
 
 #logo:hover {
@@ -572,7 +572,7 @@ footer {
 }
 
 .social-icon-svg:hover .social-icon{
-	fill: #B4184D;
+	/* fill: #B4184D; */
 }
 
 
