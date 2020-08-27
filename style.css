@@ -7,6 +7,11 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--blueish: #0070CD;
+	--light-blueish: #1b78c4;
+  }
+
 
 body {
 	width: 100%;
@@ -51,13 +56,11 @@ h4 {
 a {
 	font-family: Assistant, sans-serif;
 	text-decoration: none;
-	color: #B4184D;
-	/*color: #0070CD;*/
+	color: var(--blueish);
 }
 
 a:hover {
-	color: #44C0FF;
-	color: #E60F57;
+	color: var(--light-blueish);
 }
 
 .main-wrapper {
@@ -82,7 +85,7 @@ a:hover {
 .button:hover {
 	/*border: solid #44C0FF 3px;
 	background-color: #4A90E2;*/
-	background-color: #B4184D;
+	background-color: #222;
 	/*background-color: #244872;*/
 	color: white;
 	transform: scale(1.05);
@@ -125,15 +128,21 @@ img {
 	width: 100%;
 	position: fixed;
 	background-color: rgba(255,255,255,0.98);
+	display: flex;
+	align-content: center;
+	flex-direction: row;
+	justify-content: left;
+
 }
 
 /* Remove margins and padding from the list, 
 and add a black background color */
 
 ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+	list-style-type: none;
+	margin: 0;
+    padding-left: 60px;
+    /* padding: 0; */
     overflow: hidden;
     z-index: 1000;
 }
@@ -449,12 +458,11 @@ ul.topnav li a:hover {
 
 .page-through-div:hover .arrows{
 	transform: scale(1.2);
-	color: #E60F57;
+	color: var(--blueish);
 }
 
 .arrows {
-	/*color: #0070CD;*/
-	color: #B4184D;
+	color: var(--blueish);
 	display: inline-block;
 }
 
@@ -522,7 +530,7 @@ ul.topnav li a:hover {
 }
 
 .contact-icon-svg:hover .contact-icon{
-	fill: #B4184D;
+	fill: var(--blueish);
 }
 
 
@@ -657,8 +665,10 @@ footer {
 					MOBILE STYLES
  *******************************************************/
 
-@media (max-width: 600px) {
-
+@media (max-width: 700px) {
+	.topnav {
+	justify-content: center;
+ }
 }
 
 
