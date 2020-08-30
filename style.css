@@ -10,6 +10,7 @@
 :root {
 	--blueish: #0070CD;
 	--light-blueish: #1b78c4;
+	--nearly-black: #222;
   }
 
 
@@ -26,7 +27,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: Assistant, sans-serif;
 	font-weight: 400;
-	color: #4A4A4A;
+	color: var(--nearly-black);
 }
 
 p, ul, em{
@@ -68,8 +69,7 @@ a:hover {
 }
 
 .button {
-	/*border: solid #4A4A4A 3px;
-	background-color: #4A4A4A;*/
+
 	background-color: black;
 	border-radius: 3px;
 	padding: 0.5rem;
@@ -83,10 +83,8 @@ a:hover {
 }
 
 .button:hover {
-	/*border: solid #44C0FF 3px;
-	background-color: #4A90E2;*/
+
 	background-color: #222;
-	/*background-color: #244872;*/
 	color: white;
 	transform: scale(1.05);
 	text-decoration: none;
@@ -142,7 +140,6 @@ ul.topnav {
 	list-style-type: none;
 	margin: 0;
     padding-left: 60px;
-    /* padding: 0; */
     overflow: hidden;
     z-index: 1000;
 }
@@ -153,7 +150,7 @@ ul.topnav li {float: left;}
 /* Style the links inside the list items */
 ul.topnav li a {
     display: inline-block;
-    color: #444;
+    color: var(--nearly-black);
     text-align: center;
     padding: 1rem 1rem 0.5rem 1rem;
     text-decoration: none;
@@ -269,7 +266,7 @@ ul.topnav li a:hover {
 }
 
 #logo-svg {
-	fill: #4A4A4A;
+	fill: var(--nearly-black);
 	transition: all .2s ease-in-out; 
 }
 
@@ -294,7 +291,7 @@ ul.topnav li a:hover {
 
 .portfolio-piece p {
 	transition: transform .2s ease-in-out; 
-	color: #4A4A4A;
+	color: var(--nearly-black);
 }
 
 .portfolio-img {
@@ -516,7 +513,7 @@ ul.topnav li a:hover {
 }
 
 .contact-icon {
-	fill: #4A4A4A;
+	fill: var(--nearly-black);
 }
 
 .contact-icon-svg {
@@ -541,7 +538,7 @@ ul.topnav li a:hover {
 footer {
 	width: 100%;
 	text-align: center;
-	background-color: #444;
+	background-color: var(--nearly-black);
 	color: white;
 	right: 0;
   	bottom: 0;
@@ -580,10 +577,6 @@ footer {
 						RESUME
 ********************************************************/
 #resume {
-  /*max-width: 900px;
-  margin: auto;
-  margin-top: 60px;
-  display: block;*/
   width: 80%;
   margin: auto;
   max-width: 750px;
@@ -668,6 +661,10 @@ footer {
 @media (max-width: 700px) {
 	.topnav {
 	justify-content: center;
+	
+ }
+ ul.topnav {
+	padding: 0px;
  }
 }
 
