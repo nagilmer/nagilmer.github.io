@@ -204,6 +204,10 @@ ul.topnav li a:hover {
 	background-color: #91E7CE;
 }
 
+#logos:hover {
+	background-color: #F9C3CB;
+}
+
 #ltc:hover {
 	background-color: #B098C6;
 }
