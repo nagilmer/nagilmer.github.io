@@ -31,28 +31,101 @@
 </head>
 
 <body>
-  <ul class="topnav">
+  <ul class="topnav"> 
     <li><a href="index.html">Work</a></li>
-    <li><a class="active" href="about.html">About</a></li>
+    <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-<wrapper id="about-page" class="main-wrapper">
-  <h2 class="title">ABOUT</h2>
+<wrapper class="case-study" class="main-wrapper">
+  <h2 class="whole-line">MODERN TRIAL MANAGEMENT</h2>
   <div class="first-third">
-    <a href="img/ngbw.jpg"><img class="center" src="img/ngbw.jpg"></a>
-    <!--<img class="center" src="img/Nadine.png" id="nadine">-->
+    <img class="center" src="img/atlassian.png">
+    <h4>Modern Trial Management</h4>
+    <p>2020</p>
+    <p>UI, UX</p>
+    <!-- <div class=other-cs>
+      <a class="prev-div page-through-div" href="Interview.html">
+        <i class="fa fa-angle-left arrows"></i>
+        <p class="prev flip-word">Prev</p>
+      </a>
+      <a class="next-div page-through-div" href="logos.html">
+          <p class="next flip-word">Next</p>
+          <i class="fa fa-angle-right arrows"></i>
+      </a>
+    </div> -->
   </div>
-  <div class="two-thirds">
-    <p>Hi! I’m Nadine and I’m a product designer who loves solving complex issues through design. I have over seven years of experience designing engaging, user-friendly interfaces for both web and mobile. My experience includes work for <a href="https://www.atlassian.com/">Atlassian</a>, <a href="https://www.smartrecruiters.com/">SmartRecruiters</a>, <a href="https://www.getkeepsafe.com/">Keepsafe</a>, <a href="https://www.upstart.com/">Upstart</a>, and more.
-    </p>
-    <p>I was born in Mexico and raised in Michigan, where I later attended the University of Michigan. I’ve also lived in Germany several times, and my husband and I <a href="https://www.aquipoquito.com/" target="blank">traveled</a> for six months until the Coronavirus put a stop to it.</p>
-    <p>I’m currently based in the US, where I am freelancing and working as a contract growth designer at Atlassian.</p>
-    <p>When I’m not working, I’m learning to code my designs, listening to audiobooks or podcasts, sewing, writing, and wishing I could travel again.</p>
-    <!-- <a class="button" href="resume.html">View resume</a> -->
+  </div>
+  <div class="two-thirds"> 
+    <p><strong>Company:</strong> Atlassian</p>
+    <p><strong>Project:</strong> Modern Trial Management (formerly Persistent Upgrade Touchpoints)</p>
+    <p><strong>Team:</strong> Apollo - Justin Baker (Design Lead), Jason Fox (Content Designer), Grace Xu (PM), Huimin Wu (Data Scientist) Huimin Wu, Liqin (Engineering Lead)</p>
+
+    <h3>Problems</h3>
+      <h4>Principle issue</h4>
+        <p>Unless an admin interacts with a feature gate or user limit, there are currently no in-product indications that they’re on a Free plan, or that other plans exist.</p>
+        <a href="img/current-signing-up.png"><img src="img/current-signing-up.png"></a>
+      <h4>Other problems</h4>
+      <ol>
+        <li>If the user did manage to start a trial, there were no trial status indications in the product.</li>
+        <li>When inside the product, it takes 5 clicks to get to upgrade, and none of the CTAs say anything about upgrading.</li>
+        <li>Nth users have no indication of an instance’s trial status or any benefits of the trial.</li>
+      </ol>
+      <a href="img/current-upgrade-flow.png"><img src="img/current-upgrade-flow.png"></a>
+      <p class="caption">The path to upgrading takes 5 clicks through admin pages</p>
+    
+    <h3>Research</h3>
+      <h4>User research</h4>
+        <p>From the research done by the team previously working on Free (Redbull), we saw that users typically became aware of the other plans when they hit a feature gate or user limit. https://hello.atlassian.net/wiki/spaces/PGT/pages/706219807/Findings+Report+-+Understanding+the+barriers+that+exist+when+it+comes+to+upgrading+to+a+paid+plan</p>
+        <p>From this research, we also saw that the stated limits of the plans were often a detractor. For instance, when customers would see the 5,000 user limit on Standard, they felt this plan was not for them, because they only had 10-20 users.</p>
+        <a href="img/user-limit.png"><img src="img/user-limit.png"></a>
+      <h4>Competitive analysis</h4>
+        <p>I did a survey of many other companies in the tech space to see how they make users aware of paid plans, encourage them to upgrade, and communicate trial status. What I found was that nearly every product had a persistent upgrade touchpoint in a highly visible place in the product while they were not paying. Once the account was upgraded, the touchpoint usually disappeared. https://hello.atlassian.net/wiki/spaces/PGT/pages/753605535/Upgrade+and+Trial+Industry+Best+Practices</p>
+        <a href="img/competitors-buttons.png"><img src="img/competitors-buttons.png"></a>
+    <h3>Hypothesis</h3>
+      <p>We believe that helping people understand what edition they’re on and providing them with a clear and persistent touchpoint to upgrade will result in an increase in upgrades because users will be more aware of premium plans and have a smoother path to upgrade.</p>
+
+    <h3>Metrics</h3>
+      <h4>Usability requirements for success</h4>
+      <ul>
+        <li>People know what plan they’re on</li>
+        <li>People have a clear path to upgrade (start a trial)</li>
+      </ul>
+      <h4>What we’re measuring</h4>
+      <ul>
+        <li># of upgrades via this new touch-point</li>
+        <li># of upgrades overall</li>
+      </ul>
+    <h3>Process</h3>
+      <p>Using the research and competitive analysis as a guide for our users’ expectations, I designed several options for persistently displaying the upgrade touchpoint in the product. This was a challenging task because the navigation bars of our products are already very full, and I did not want the overshadow the core functionality with the upgrade touchpoint. I paid particular attention to the navigation content in each product, and the width of the page.</p>
+      <a href="img/widths-and-states.png"><img src="img/widths-and-states.png"></a>
+
+      <p>There are three main states that a trial can be in: Pre trial, during trial, and after trial. Each stage has a different set of information to convey.</p>
+
+      <p>I went through several iterations of sparring with a representative from ADG (Tamarah Walsh), growth, and product teams. Through this process, it became clear to us that persisting the state of the trial in the navigation bar would be too much of an interruption to the core experience, and would not give us the space we wanted to convey all the information pertaining to the trial. Because of this, we decided to use the banner component instead.</p>
+      <a href="img/touchpoint-options.png"><img src="img/touchpoint-options.png"></a>
+
+      <p>Banners can often be seen as a nuisance, and I did not want this banner to get in the way, so I made several modifications to it. Firstly, I made it dismissable, so the user could remove it when needed. Secondly, I decreased the height so that it would not take up as much space. This was important because there are important pages in some products that already have a lot of vertical space above the core area of interaction. Thirdly, we changed the pattern so that the banner would only show up intermittently, and when necessary.</p>
+      <a href="img/banner-mods.png"><img src="img/banner-mods.png"></a>
+
+      <p>Using this banner and the nudge component, we trained the user to access more information and actions in the account dropdown.</p>
+      <a href="img/new-flow.png"><img src="img/new-flow.png"></a>
+
+      <p>The banner treatment also allowed us to add important information specific to the state of the trial. In the pre-trial period we could tell the user why they might want to upgrade, during the trial we could show them new features and tell them their end date, and after the trial we could show them important information regarding their account.</p>
+      <a href="img/banners.png"><img src="img/banners.png"></a>
+
+      <p>Another important component of this flow is the user benefits modal. We decided to let the user upgrade through this modal flow so that they would not have to go into the Admin portal. This allowed us to focus on the benefits of upgrading instead of payment and plan details that they might not quickly understand.</p>
+      <a href="img/user-benefits-modal.png"><img src="img/user-benefits-modal.png"></a>
+
+      <p>The user benefits modal leads into the proactive billing flow which is a previous successful experiment.</p>
+      <a href="img/trial-started-modal.png"><img src="img/trial-started-modal.png"></a>
+
+    <h3>Next steps</h3>
+    <p>This experiment is currently in development. Unfortunately, the Nth user aspect of the project has been descoped for now, but we plan to run it as a follow-up experiment. We also plan to link it to our show plans experiment, which improves the proactive billing flow. </p>
+    
   </div>
 </wrapper>
 </body>
-<footer class="bottom">
+<footer>
   <div class="social-icons">
       <a href="https://dribbble.com/NadineGilmer" target="blank"><svg class="social-icon-svg" width="30px" height="29px" viewBox="0 0 30 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -93,16 +166,4 @@
   </div>
   <p>© 2020 Made from scratch by Nadine Gilmer</p>
 </footer>
-<script type="text/javascript"> 
-
-  $(window).scroll(function() {
-  if ($(this).scrollTop() > 200){  
-      $('.nav-logo').addClass("show");
-    }
-    else{
-      $('.nav-logo').removeClass("show");
-    }
-  });
-
-</script>
 </html>
