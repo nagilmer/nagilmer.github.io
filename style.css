@@ -327,7 +327,7 @@ ul.topnav li a:hover {
 
 #work {
 	animation-name: appear;
-	animation-duration: 2s;
+	animation-duration: 1s;
 }
 
 @keyframes appear {
