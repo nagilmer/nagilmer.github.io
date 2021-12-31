@@ -43,7 +43,7 @@
     <!--<img class="center" src="img/Nadine.png" id="nadine">-->
   </div>
   <div class="two-thirds">
-    <p>Hi, I’m Nadine! I am currently a senior product designer at <a href="https://www.atlassian.com/">Atlassian</a>, where I work on the growth team. I love solving complex issues through design, and have over seven years of experience designing engaging, user-friendly interfaces for both web and mobile. My experience includes work for <a href="https://www.smartrecruiters.com/">SmartRecruiters</a>, <a href="https://www.getkeepsafe.com/">Keepsafe</a>, <a href="https://www.effx.com/">Effx</a>, <a href="https://www.upstart.com/">Upstart</a>, and more.
+    <p>Hi, I’m Nadine! I am currently a senior product designer at <a href="https://www.atlassian.com/">Atlassian</a>, where I work on the growth team. I love solving complex issues through design, and have over <span id="yrs-experience"></span> years of experience designing engaging, user-friendly interfaces for both web and mobile. My experience includes work for <a href="https://www.smartrecruiters.com/">SmartRecruiters</a>, <a href="https://www.getkeepsafe.com/">Keepsafe</a>, <a href="https://www.effx.com/">Effx</a>, <a href="https://www.upstart.com/">Upstart</a>, and more.
     </p>
     <p>I was born in Mexico and raised in Michigan, where I later attended the University of Michigan. I’ve also lived in Germany several times, and my husband and I <a href="https://www.aquipoquito.com/" target="blank">traveled</a> for six months until the Coronavirus put a stop to it.</p>
     <p>When I’m not working, I’m learning to code my designs, listening to audiobooks or podcasts, sewing, writing, and wishing I could travel again.</p>
@@ -90,7 +90,7 @@
               </svg>
       </a>
   </div>
-  <p>© 2021 Made from scratch by Nadine Gilmer</p>
+  <p>© <span id="current-year"></span> Made from scratch by Nadine Gilmer</p>
 </footer>
 <script type="text/javascript"> 
 
@@ -102,6 +102,8 @@
       $('.nav-logo').removeClass("show");
     }
   });
+  document.getElementById("current-year").innerHTML = new Date().getFullYear();
+  document.getElementById("yrs-experience").innerHTML = (new Date().getFullYear())-2013;
 
 </script>
 </html>

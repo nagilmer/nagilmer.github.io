@@ -111,7 +111,7 @@
               </svg>
       </a>
   </div>
-  <p>© 2021 Made from scratch by Nadine Gilmer</p>
+  <p>© <span id="current-year"></span> Made from scratch by Nadine Gilmer</p>
 </footer>
 <script type="text/javascript"> 
 
@@ -123,6 +123,8 @@
       $('.nav-logo').removeClass("show");
     }
   });
+
+   document.getElementById("current-year").innerHTML = new Date().getFullYear();
 
 </script>
 </html>
