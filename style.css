@@ -325,15 +325,20 @@ ul.topnav li a:hover {
 	will-change: opacity;
 }
 
-#work {
+/* #work {
 	animation-name: appear;
 	animation-duration: 1s;
+} */
+
+.main-wrapper {
+animation-name: appear;
+animation-duration: 1s;
 }
 
 @keyframes appear {
 	from { 
 		opacity: 0;
-		transform: translateY(2em);
+		transform: translateY(1em);
 	}
 	to {
 		opacity: 1;
